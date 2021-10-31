@@ -1,0 +1,16 @@
+head { display: block;
+    background: white;
+    height: 405px; 
+    font-family: Montserrat;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+  }
+ 
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/}
+
+li {display: inline;
+    padding-left: 40px}
