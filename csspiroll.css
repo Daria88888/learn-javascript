@@ -54,6 +54,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .intro--info {
     display: flex;
     flex-grow: 1;
@@ -75,13 +76,12 @@
     line-height: 1.556;
 }
 
-
 .about--signature {
     width: auto;
     height: 150px;
     padding-left: 550px;
     padding-bottom: 50px;
-    display: flex;  
+    display: flex;
 }
 
 .about--title {
@@ -89,7 +89,7 @@
     display: flex;
     text-align: center;
     padding-top: 100px;
-    padding-left: 530px;    
+    padding-left: 530px;
 }
 
 .about--description {
@@ -103,7 +103,7 @@
 
 .row--achievements {
     height: 200px;
-    background-color:#1CC0B6;
+    background-color: #1CC0B6;
     color: white;
     display: flex;
     justify-content: center;
@@ -112,18 +112,30 @@
     padding-top: 45px;
 }
 
-.row--projects {
-    height: 500px;
-    background:radial-gradient(at top, #FEFFFF, #f0f5f5);;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 45px;
-    padding-left: 80px;
-
+.projects {
+    height: 400px;
+    background: radial-gradient(at top, #FEFFFF, #f0f5f5);
 }
 
-.img--projects--1 { /* как задать фон чтобы он заполнял весь квадрат а не маленькую часть вокруг лаптопа?*/
+.row--projects--1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 45px;
+    padding-left: 80px;
+    padding-bottom: calc(45px/2);
+}
+
+.row--projects--2 {
+    background: radial-gradient(at top, #FEFFFF, #f0f5f5);
+    display: flex;
+    flex-direction: row;
+    padding-left: 80px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.img--projects--1 {
+    /* как задать фон чтобы он заполнял весь квадрат а не маленькую часть вокруг лаптопа?*/
     width: auto;
     height: 100px;
 }
@@ -143,7 +155,8 @@
     height: 100px;
 }
 
-.img--projects--5 { /* как задать фон чтобы он заполнял весь квадрат а не маленькую часть вокруг лаптопа?*/
+.img--projects--5 {
+    /* как задать фон чтобы он заполнял весь квадрат а не маленькую часть вокруг лаптопа?*/
     width: auto;
     height: 100px;
     display: flex;
@@ -164,3 +177,129 @@
     height: 100px;
 }
 
+.img--projects--1 a {
+    /*не работает какого-то хера ?! */
+    transition: color 0.3s;
+}
+
+.img--projects--1 a:hover {
+    /*не работает какого-то хера ?! */
+    color: #0b1313;
+}
+
+.row--projects--3 {
+    /*хочу текст чтобы посередине был, добавляла даже в отдельный контейнер - не сработало. почему? */
+    height: 75px;
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.contact--text {
+    /*почему все-такие такое огромное расстояние между заголовком и текстом??*/
+    display: flexbox;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: lightgray;
+    /*почему текст все равно черный?? */
+}
+
+h3 {
+    font-size: 36px;
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(at top, #FEFFFF, #f0f5f5);
+}
+
+input[type=text] {
+    /*нихера не получается на одну строку имя и имейл запихать */
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    border: none;
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+input[type=comment] {
+    border: none;
+    width: 100%;
+    height: 130px;
+    padding-left: 20px;
+    padding-top: 0;
+    box-sizing: border-box;
+    padding-bottom: 45px;
+}
+
+.message {
+    margin-top: 40px;
+    background-color: #1CC0B6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.info--footer {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    height: 200px;
+}
+
+.company--info {
+    display: inline-flex;
+    justify-items: flex-end;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: calc(45px/2);
+}
+
+.contacts {
+    display: inline-flex;
+    justify-items: flex-end;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: calc(45px/2);
+}
+
+.sitemap--1 { /* ну почему он не выравнивается вправо ?((((*/
+    display: inline-flex;
+    justify-items: flex-end;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: calc(45px/2);
+}
+
+.sitemap--2 { /* ну почему он не выравнивается вправо ?((((*/
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-bottom: calc(45px/2);
+}
