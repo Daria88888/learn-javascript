@@ -47,6 +47,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .intro--content {
@@ -68,150 +69,119 @@
 
 .intro--title {
     font-size: 38px;
+    margin-bottom: 30px;
 }
 
 .intro--description {
     color: grey;
     font-size: 18px;
     line-height: 1.556;
+    margin-bottom: 30px;
+}
+
+.about {
+    padding: 50px 0;
+    text-align: center;
 }
 
 .about--signature {
     width: auto;
     height: 150px;
-    padding-left: 550px;
-    padding-bottom: 50px;
-    display: flex;
 }
 
 .about--title {
     font-size: 36px;
-    display: flex;
     text-align: center;
-    padding-top: 100px;
-    padding-left: 530px;
+    margin-bottom: 30px;
 }
 
 .about--description {
     color: grey;
     font-size: 18px;
     line-height: 1.556;
-    padding-left: 300px;
-    padding-right: 300px;
     text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
-.row--achievements {
-    height: 200px;
+.achievements {
     background-color: #1CC0B6;
     color: white;
+    padding: 50px 0;
+}
+
+.achievements--logo {
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.achievements--card {
     display: flex;
-    justify-content: center;
-    padding-left: 130px;
     align-items: center;
-    padding-top: 45px;
-}
-
-.projects {
-    height: 400px;
-    background: radial-gradient(at top, #FEFFFF, #f0f5f5);
-}
-
-.row--projects--1 {
-    display: flex;
-    flex-direction: row;
-    padding-top: 45px;
-    padding-left: 80px;
-    padding-bottom: calc(45px/2);
-}
-
-.row--projects--2 {
-    background: radial-gradient(at top, #FEFFFF, #f0f5f5);
-    display: flex;
-    flex-direction: row;
-    padding-left: 80px;
-    padding-top: 45px;
-    padding-bottom: 45px;
-}
-
-.img--projects--1 {
-    /* как задать фон чтобы он заполнял весь квадрат а не маленькую часть вокруг лаптопа?*/
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--2 {
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--3 {
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--4 {
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--5 {
-    /* как задать фон чтобы он заполнял весь квадрат а не маленькую часть вокруг лаптопа?*/
-    width: auto;
-    height: 100px;
-    display: flex;
-}
-
-.img--projects--6 {
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--7 {
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--8 {
-    width: auto;
-    height: 100px;
-}
-
-.img--projects--1 a {
-    /*не работает какого-то хера ?! */
-    transition: color 0.3s;
-}
-
-.img--projects--1 a:hover {
-    /*не работает какого-то хера ?! */
-    color: #0b1313;
-}
-
-.row--projects--3 {
-    /*хочу текст чтобы посередине был, добавляла даже в отдельный контейнер - не сработало. почему? */
-    height: 75px;
-    display: flex;
-    background-color: #f1f1f1;
     justify-content: center;
+}
+
+.projects--row-1 .project:nth-child(2n) {
+    background: #eee;
+}
+
+.projects--row-2 .project:nth-child(2n-1) {
+    background: #eee;
+}
+
+.project--img {
+    width: 100%;
+    height: auto;
+}
+
+.project {
+    position: relative;
+}
+
+.project::after {
+    content: "";
+    transition: background-color 0.3s;
+}
+
+.project:hover::after {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(Piroll/eye.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button__projects {
+    width: 100%;
+    background-color: #eee;
+    color: black;
     text-transform: uppercase;
 }
 
-.contact--text {
-    /*почему все-такие такое огромное расстояние между заголовком и текстом??*/
-    display: flexbox;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    color: lightgray;
-    /*почему текст все равно черный?? */
+.feedback {
+    padding: 50px 0;
 }
 
-h3 {
+.feedback--title {
     font-size: 36px;
-    display: flexbox;
-    justify-content: center;
-    align-content: center;
     text-align: center;
+    margin-bottom: 30px ;
+}
+
+.feedback--text {
+    color: gray;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 30px;
 }
 
 .form {
@@ -288,7 +258,8 @@ input[type=comment] {
     padding-bottom: calc(45px/2);
 }
 
-.sitemap--1 { /* ну почему он не выравнивается вправо ?((((*/
+.sitemap--1 {
+    /* ну почему он не выравнивается вправо ?((((*/
     display: inline-flex;
     justify-items: flex-end;
     padding-top: 20px;
@@ -296,7 +267,8 @@ input[type=comment] {
     padding-bottom: calc(45px/2);
 }
 
-.sitemap--2 { /* ну почему он не выравнивается вправо ?((((*/
+.sitemap--2 {
+    /* ну почему он не выравнивается вправо ?((((*/
     display: flex;
     flex-direction: column;
     padding-top: 20px;
