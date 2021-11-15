@@ -12,7 +12,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/csspiroll.css">
+    <link rel="stylesheet" href="assets/css/intro.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/achievements.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/feedback.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -137,72 +142,59 @@
     <section class="feedback content">
         <h3 class="feedback--title">Need a Project?</h3>
         <p class="feedback--text">Let us know is simply dummy text of the printing
-            and typesetting industry.  Ipsum has been the industry's
+            and typesetting industry. Ipsum has been the industry's
             standard dummy text ever since the 1500s,</p>
-        <form>
-            <label for="fname"></label>
+        <div class="col-4"></div>
+        <form class="col-4">
             <input type="text" placeholder="Your Name">
-            <label for="email"></label>
             <input type="text" placeholder="Your E-Mail">
-            <label for="title"></label>
             <input type="text" placeholder="Your Title"><br> <br>
             <input type="comment" placeholder="Your Comment">
         </form>
-        <button class="message">Send message</button>
+        <div class="col-4"></div>
+        <div class="col-1"></div>
+        <button class="message col-2">Send message</button>
     </section>
 
 
-<footer>
-    <section class="footer">
-        <div class="info--footer">
-            <div class="col-2">
-                <img src="" class="company--info">
-                <p class="company--name">Piroll Design. Inc.</p>
-                <p class="copyright">© 2017 Piroll. All rights reserved. <br> Designed by robirurk.</p>
-            </div>
-
-            <div class="col-4">
-                <img src="" class="contacts">
-                <p class="contact--email">hello@pirolltheme.com</p>
-                <p class="contact--phone">+44 987 065 908</p>
-            </div>
-
-            <div class="col-6">
-                <img src="" class="sitemap--1">
-                <nav>
-                    <ul class="menu">
+    <footer>
+        <section class="footer">
+            <div class="info--row">
+                <div class="name">
+                    <p class="company--name">Piroll Design. Inc.</p>
+                    <p class="copyright">© 2017 Piroll. All rights reserved. <br> Designed by robirurk.</p>
+                </div>
+                <div class="contacts">
+                    <p class="contact--email">hello@pirolltheme.com</p>
+                    <p class="contact--phone">+44 987 065 908</p>
+                </div>
+                <div class="col-6"></div>
+                <nav class="menu--column-1">
+                    <ul>
                         <li class="menu--item"><a>Projects</a></li>
                         <li class="menu--item"><a>About</a></li>
                         <li class="menu--item"><a>Services</a></li>
                         <li class="menu--item"><a>Career</a></li>
                     </ul>
                 </nav>
-            </div>
 
-            <div class="col-12">
-                <img src="" class="sitemap--2">
-                <nav>
-                    <ul class="menu">
+                <nav class="menu--column-2">
+                    <ul>
                         <li class="menu--item"><a>News</a></li>
                         <li class="menu--item"><a>Events</a></li>
                         <li class="menu--item"><a>Contacts</a></li>
                         <li class="menu--item"><a>Legals</a></li>
                     </ul>
                 </nav>
-            </div>
 
-            <div class="col-12">
-                <img src="" class="socialmedia">
-                <a>
-                    <p>Facebook</p>
-                </a>
-                <a>
-                    <p>Twitter</p>
-                </a>
-                <a>Instagram</a>
-                <a>Dribble</a>
+                <div class="socialmedia">
+                    <a>Facebook</a>
+                    <a>Twitter</a>
+                    <a>Instagram</a>
+                    <a>Dribble</a>
+
+                </div>
             </div>
-        </div>
-    </section>
-</footer>
+        </section>
+    </footer>
 </body>

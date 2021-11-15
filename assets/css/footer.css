@@ -1,0 +1,43 @@
+
+.footer {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    height: 200px;
+    font-weight: lighter;
+    padding: 40px 40px;
+    line-height: 1.7;
+}
+
+.info--row {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.company--name{
+    font-weight:bold;
+}
+
+.copyright {
+    margin-top: 10px;
+}
+
+.contacts {
+    margin-left: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact--phone {
+    margin-top: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 100px;
+}

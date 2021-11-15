@@ -1,0 +1,41 @@
+.projects--row-1 .project:nth-child(2n) {
+    background: #eee;
+}
+
+.projects--row-2 .project:nth-child(2n-1) {
+    background: #eee;
+}
+
+.project--img {
+    width: 100%;
+    height: auto;
+}
+
+.project {
+    position: relative;
+}
+
+.project::after {
+    content: "";
+    transition: background-color 0.3s;
+}
+
+.project:hover::after {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(/Users/daria/projects/learn-javascript/assets/images/eye.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.button__projects {
+    width: 100%;
+    background-color: #eee;
+    color: black;
+    text-transform: uppercase;
+}

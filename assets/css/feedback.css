@@ -1,0 +1,72 @@
+.feedback {
+    padding: 50px 0;
+}
+
+.feedback--title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px ;
+}
+
+.feedback--text {
+    color: gray;
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+input[type=text] {
+    /*нихера не получается на одну строку имя и имейл запихать */
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    border: none;
+    width: 100%;
+    display: flexbox;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}
+
+input[type=comment] {
+    border: none;
+    width: 100%;
+    height: 130px;
+    padding-left: 20px;
+    padding-top: 0;
+    box-sizing: border-box;
+    padding-bottom: 45px;
+}
+
+:placeholder-shown {
+    background-color: #eee;
+}
+
+.message {
+    text-align: center;    
+    margin-top: 40px;
+    background-color: #1CC0B6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    align-self: center;
+}

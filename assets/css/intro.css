@@ -1,0 +1,80 @@
+.intro--content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro--info {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.intro--img {
+    width: auto;
+    height: 400px;
+}
+
+.intro--title {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.intro--description {
+    color: grey;
+    font-size: 18px;
+    line-height: 1.556;
+    margin-bottom: 30px;
+}
+
+.intro {
+    background: radial-gradient(at top, #FEFFFF, #f0f5f5);
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    font-size: 12px;
+}
+
+.logo {
+    width: 31px;
+    height: 25px;
+}
+
+.menu {
+    list-style: none;
+    /*убираем маркеры списка*/
+    margin: 0;
+    /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0;
+    /*убираем левый отступ, равный 40px*/
+    display: flex;
+}
+
+.menu--item {
+    margin-left: 25px;
+}
+
+.menu--item a {
+    transition: color 0.3s;
+}
+
+.menu--item a:hover {
+    color: #85e0e0;
+}
+
+.button {
+    background-color: #1CC0B6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

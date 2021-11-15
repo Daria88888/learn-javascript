@@ -1,0 +1,18 @@
+
+.achievements {
+    background-color: #1CC0B6;
+    color: white;
+    padding: 50px 0;
+}
+
+.achievements--logo {
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.achievements--card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
