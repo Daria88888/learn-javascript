@@ -18,3 +18,27 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
+.button {
+    background-color: #1CC0B6;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input {
+    /*нихера не получается на одну строку имя и имейл запихать */
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.input:placeholder-shown {
+    background-color: #eee;
+}

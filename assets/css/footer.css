@@ -2,19 +2,12 @@
 .footer {
     background-color: rgb(24, 23, 23);
     color: white;
-    height: 200px;
+    font-size: 10px;
     font-weight: lighter;
     padding: 40px 40px;
     line-height: 1.7;
 }
 
-.info--row {
-    max-width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    padding-top: 20px;
-    padding-left: 20px;
-}
 
 .company--name{
     font-weight:bold;
@@ -35,9 +28,13 @@
     margin-top: 10px;
 }
 
-.socialmedia {
+.socialmedia--outer {
+    display: flex;       
+    justify-content: flex-end;
+}
+
+.socialmedia--inner {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    margin: 0 100px;
+    align-items: flex-start;
 }

@@ -146,10 +146,12 @@
             standard dummy text ever since the 1500s,</p>
         <div class="col-4"></div>
         <form class="col-4">
-            <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your E-Mail">
-            <input type="text" placeholder="Your Title"><br> <br>
-            <input type="comment" placeholder="Your Comment">
+            <div class="form--credentials">
+                <input class="input feedback--input" type="text" placeholder="Your Name">
+                <input class="input feedback--input" type="email" placeholder="Your E-Mail">
+            </div>
+            <input class="input feedback--input" type="text" placeholder="Your Title">
+            <textarea class="input feedback--comment" placeholder="Your Comment"></textarea>
         </form>
         <div class="col-4"></div>
         <div class="col-1"></div>
@@ -157,44 +159,46 @@
     </section>
 
 
-    <footer>
-        <section class="footer">
-            <div class="info--row">
-                <div class="name">
-                    <p class="company--name">Piroll Design. Inc.</p>
-                    <p class="copyright">© 2017 Piroll. All rights reserved. <br> Designed by robirurk.</p>
-                </div>
-                <div class="contacts">
-                    <p class="contact--email">hello@pirolltheme.com</p>
-                    <p class="contact--phone">+44 987 065 908</p>
-                </div>
-                <div class="col-6"></div>
-                <nav class="menu--column-1">
-                    <ul>
-                        <li class="menu--item"><a>Projects</a></li>
-                        <li class="menu--item"><a>About</a></li>
-                        <li class="menu--item"><a>Services</a></li>
-                        <li class="menu--item"><a>Career</a></li>
-                    </ul>
-                </nav>
+    <footer class="footer">
+        <div class="row content">
+            <div class="col-4">
+                <p class="company--name">Piroll Design. Inc.</p>
+                <p class="copyright">© 2017 Piroll. All rights reserved. <br> Designed by robirurk.</p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-3">
+                <p class="contact--email">hello@pirolltheme.com</p>
+                <p class="contact--phone">+44 987 065 908</p>
+            </div>
 
-                <nav class="menu--column-2">
-                    <ul>
-                        <li class="menu--item"><a>News</a></li>
-                        <li class="menu--item"><a>Events</a></li>
-                        <li class="menu--item"><a>Contacts</a></li>
-                        <li class="menu--item"><a>Legals</a></li>
-                    </ul>
-                </nav>
+ 
 
-                <div class="socialmedia">
+            <nav class="col-1">
+                <ul>
+                    <li class="menu--item"><a>Projects</a></li>
+                    <li class="menu--item"><a>About</a></li>
+                    <li class="menu--item"><a>Services</a></li>
+                    <li class="menu--item"><a>Career</a></li>
+                </ul>
+            </nav>
+
+            <nav class="col-1">
+                <ul>
+                    <li class="menu--item"><a>News</a></li>
+                    <li class="menu--item"><a>Events</a></li>
+                    <li class="menu--item"><a>Contacts</a></li>
+                    <li class="menu--item"><a>Legals</a></li>
+                </ul>
+            </nav>
+
+            <div class="col-2 socialmedia--outer">
+                <div class="socialmedia--inner">
                     <a>Facebook</a>
                     <a>Twitter</a>
                     <a>Instagram</a>
                     <a>Dribble</a>
-
                 </div>
             </div>
-        </section>
+        </div>
     </footer>
 </body>
