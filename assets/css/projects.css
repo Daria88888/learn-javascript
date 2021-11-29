@@ -23,7 +23,7 @@
 .project:hover::after {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
-    background-image: url(/Users/daria/projects/learn-javascript/assets/images/eye.png);
+    background-image: url(/assets/images/eye.png);
     background-size: 80px;
     background-position: center;
     background-repeat: no-repeat;

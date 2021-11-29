@@ -32,7 +32,6 @@ a {
 }
 
 .input {
-    /*нихера не получается на одну строку имя и имейл запихать */
     border: none;
     width: 100%;
     padding: 12px 20px;
@@ -42,3 +41,4 @@ a {
 .input:placeholder-shown {
     background-color: #eee;
 }
+

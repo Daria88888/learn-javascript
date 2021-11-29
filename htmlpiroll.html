@@ -18,11 +18,13 @@
     <link rel="stylesheet" href="assets/css/projects.css">
     <link rel="stylesheet" href="assets/css/feedback.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
 </head>
 
 <body>
-    <section class="intro">
-        <div class="content intro--content">
+    <section class="navigation" id="header">
+        <div class="content">
             <header class="header">
                 <img src="assets/images/logo.png" class="logo">
                 <nav>
@@ -37,6 +39,11 @@
                     </ul>
                 </nav>
             </header>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="content intro--content">
+            
 
             <div class="row intro--info">
                 <div class="col-6">
@@ -101,24 +108,24 @@
 
     <section class="projects">
         <div class="row projects--row-1">
-            <div class="col-3 project">
+            <div class="col-3 project" id="button__modal_1">
                 <img src="assets/images/laptop.png" class="project--img">
             </div>
 
-            <div class="col-3 project">
+            <div class="col-3 project" id="button__modal_2">
                 <img src="assets/images/laptop.png" class="project--img">
             </div>
 
-            <div class="col-3 project">
+            <div class="col-3 project"id="button__modal_3">
                 <img src="assets/images/laptop.png" class="project--img">
             </div>
 
-            <div class="col-3 project">
+            <div class="col-3 project"id="button__modal_4">
                 <img src="assets/images/laptop.png" class="project--img">
             </div>
         </div>
         <div class="row projects--row-2">
-            <div class="col-3 project">
+            <div class="col-3 project"id="button__modal_5">
                 <img src="assets/images/laptop.png" class="project--img">
             </div>
 
@@ -171,7 +178,7 @@
                 <p class="contact--phone">+44 987 065 908</p>
             </div>
 
- 
+
 
             <nav class="col-1">
                 <ul>
@@ -201,4 +208,16 @@
             </div>
         </div>
     </footer>
+    <script src="assets/js/learn-java-script.js"></script>
+
+    <!-- Модальное окно -->
+  <div class="modal" id="modal-1">
+    <div class="modal__content">
+      <button class="modal__close-button"> <img width = "20px" height ="20px" src="/assets/images/close.png"> </button>
+      <!-- Контент модального окна - не положить ли его в отдельный див? -->
+      <img src="/assets/images/modal_1.jpeg" class="modal__image" id="modal-content">
+    </div>
+  </div>
+ 
+  <script src="/assets/js/modal.js"></script>
 </body>

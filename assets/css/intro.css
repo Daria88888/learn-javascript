@@ -32,6 +32,19 @@
     height: 100vh;
 }
 
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.5s;
+    z-index: 1;
+}
+
+.navigation__dark {
+    background-color: #eee;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -66,4 +79,3 @@
 .menu--item a:hover {
     color: #85e0e0;
 }
-
